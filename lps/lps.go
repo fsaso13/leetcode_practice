@@ -9,33 +9,34 @@ func isPairPalindrome(s string, start int, end int) bool {
 }
 
 func expandPalindrome(s string, start int, end int) string {
-	st := start
+	// fmt.Printf("Values from call: [%d,%d]\n", start, end)
+
+	st := start - 1
 	en := end + 1
 
-	solSt := st
-	solEn := en
+	// fmt.Printf("Starting values: [%d,%d]\n", st, en)
 
-	if en > len(s) {
-		// fmt.Println("Early return")
-		return s[start:en]
+	if st < 0 || en == len(s) {
+		return s[st+1 : en]
 	}
 
 	for {
-		fmt.Printf("Expanding for [%d , %d]\n", st, en)
-		if en >= len(s) {
-			fmt.Printf("Returning (1) %s\n", s[solSt:solEn])
-			return s[solSt:solEn]
-		}
-
+		// fmt.Printf("Expanding on [%d,%d]: %s\n", st, en, s[st:en+1])
 		if isPairPalindrome(s, st, en) {
-			solEn = en
-			solSt = st
-			en++
+			// fmt.Printf("Palindrome on [%d,%d]: %s\n", st, en, s[st:en+1])
+			st -= 1
+			en += 1
+			if st < 0 || en == len(s) {
+				return s[st+1 : en]
+			}
 		} else {
-			fmt.Printf("Returning (2) %s\n", s[solSt:solEn])
-			return s[solSt:solEn]
+			return s[st+1 : en]
 		}
 	}
+	// expansionRightside := true
+	// reachedRight := false
+	// reachedLeft := false
+
 }
 
 // Current strat: search the whole string from subtrings of len 2
@@ -54,48 +55,61 @@ func longestPalindrome(s string) string {
 		}
 	}
 
-	longSubstr := s[0:1]
-	duo := true
+	start := 0
+	end := 1
 
-	// Min len for string to be palindrome is 2.
-	windowStart := 0
-	windowEnd := 1
+	odd := false
+
+	res := s[0:1]
+
 	for {
-		if windowEnd >= len(s) {
-			return longSubstr
+		// fmt.Println("longest")
+		// fmt.Println(end)
+		if end == len(s) {
+			return res
 		}
 
-		// fmt.Printf("Checking %s ...\n", s[windowStart:windowEnd+1])
-
-		if isPairPalindrome(s, windowStart, windowEnd) {
-			// fmt.Printf("%s is palindrome, expanding...\n", s[windowStart:windowEnd+1])
-			candidatePalindrome := expandPalindrome(s, windowStart, windowEnd)
-			if len(longSubstr) < len(candidatePalindrome) {
-				longSubstr = candidatePalindrome
+		if isPairPalindrome(s, start, end) {
+			candidate := expandPalindrome(s, start, end)
+			// fmt.Printf("Candidate: %s\n", candidate)
+			if len(candidate) > len(res) {
+				res = candidate
 			}
+
 		}
 
-		if duo {
-			windowEnd++
-			duo = !duo
+		if odd {
+			start++
+			odd = !odd
 		} else {
-			windowStart++
-			duo = !duo
+			end++
+			odd = !odd
 		}
+
 	}
+
 }
 
 func main() {
 	in1 := "babad"
-	in2 := "cbbd"
-	in3 := "ac"
-	in4 := "ccc"
-	in5 := "aaaa"
-
 	fmt.Println(longestPalindrome(in1))
+
+	in2 := "cbbd"
 	fmt.Println(longestPalindrome(in2))
+
+	in3 := "ac"
 	fmt.Println(longestPalindrome(in3))
+
+	in4 := "ccc"
 	fmt.Println(longestPalindrome(in4))
+
+	in5 := "aaaa"
 	fmt.Println(longestPalindrome(in5))
+
+	in6 := "ccd"
+	fmt.Println(longestPalindrome(in6))
+
+	in7 := "abcba"
+	fmt.Println(longestPalindrome(in7))
 
 }
