@@ -1,9 +1,11 @@
-go 1.19
+go 1.21.3
 
 use (
+	./13_roman_to_int
 	./lps
 	./myAtoi
 	./palinNumber
+	./regexMatch
 	./reverseInt
 	./zigzagConv
 )
