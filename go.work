@@ -2,7 +2,11 @@ go 1.21.3
 
 use (
 	./13_roman_to_int
+	./169_majority_element
+	./189_rotate_array
+	./26_remove_dupes_from_sorted_array
 	./27_remove_element
+	./80_remove_dupes_from_sorted_array_2
 	./88_merge_sorted_array
 	./lps
 	./myAtoi
