@@ -1,11 +1,16 @@
 go 1.21.3
 
 use (
+	./121_best_time_to_sell_stock
+	./122_best_time_to_buy_stocks_2
 	./13_roman_to_int
 	./169_majority_element
 	./189_rotate_array
+	./1_two_sum
+	./205_isomorphic_string
 	./26_remove_dupes_from_sorted_array
 	./27_remove_element
+	./58_lenth_of_last_word
 	./80_remove_dupes_from_sorted_array_2
 	./88_merge_sorted_array
 	./lps
