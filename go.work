@@ -10,6 +10,7 @@ use (
 	./205_isomorphic_string
 	./26_remove_dupes_from_sorted_array
 	./27_remove_element
+	./463_island_perimeter
 	./58_lenth_of_last_word
 	./80_remove_dupes_from_sorted_array_2
 	./88_merge_sorted_array
