@@ -147,7 +147,7 @@ func islandPerimeter(grid [][]int) int {
 func main() {
 	fmt.Println("potato")
 
-	Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
+	// Input: grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
 	// Output: 16
 	grid := [][]int{{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 1, 0, 0}, {1, 1, 0, 0}}
 	fmt.Println(islandPerimeter(grid))
@@ -164,6 +164,6 @@ func main() {
 
 	// Input: grid = [[0,1]]
 	// Output: 4
-	grid := [][]int{{0, 1}}
+	grid = [][]int{{0, 1}}
 	fmt.Println(islandPerimeter(grid))
 }

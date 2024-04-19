@@ -7,6 +7,7 @@ use (
 	./169_majority_element
 	./189_rotate_array
 	./1_two_sum
+	./200_number_of_islands
 	./205_isomorphic_string
 	./26_remove_dupes_from_sorted_array
 	./27_remove_element
