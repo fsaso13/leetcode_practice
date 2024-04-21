@@ -6,6 +6,7 @@ use (
 	./13_roman_to_int
 	./169_majority_element
 	./189_rotate_array
+	./1971_find_if_path_exists_in_graph
 	./1992_find_all_groups_of_farmland
 	./1_two_sum
 	./200_number_of_islands
