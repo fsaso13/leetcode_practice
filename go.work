@@ -1,4 +1,4 @@
-go 1.21.3
+go 1.22.2
 
 use (
 	./121_best_time_to_sell_stock
@@ -15,6 +15,7 @@ use (
 	./27_remove_element
 	./463_island_perimeter
 	./58_lenth_of_last_word
+	./752_open_the_lock
 	./80_remove_dupes_from_sorted_array_2
 	./88_merge_sorted_array
 	./lps
