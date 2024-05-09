@@ -13,7 +13,9 @@ use (
 	./205_isomorphic_string
 	./26_remove_dupes_from_sorted_array
 	./27_remove_element
+	./2816_double_a_number_rep_as_linklist
 	./463_island_perimeter
+	./506_relative_ranks
 	./58_lenth_of_last_word
 	./752_open_the_lock
 	./80_remove_dupes_from_sorted_array_2
