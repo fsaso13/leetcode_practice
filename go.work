@@ -21,6 +21,7 @@ use (
 	./2816_double_a_number_rep_as_linklist
 	./3075_maximize_happiness_of_selected_children
 	./3110_score_of_a_string
+	./344_reverse_string
 	./463_island_perimeter
 	./506_relative_ranks
 	./58_lenth_of_last_word
