@@ -1,6 +1,7 @@
 go 1.22.2
 
 use (
+	./1002_find_common_characters
 	./121_best_time_to_sell_stock
 	./122_best_time_to_buy_stocks_2
 	./1255_max_score_words_formed_by_letters
@@ -15,6 +16,7 @@ use (
 	./200_number_of_islands
 	./205_isomorphic_string
 	./2441_largest_positive_integer_that_exists_with_its_negative
+	./2486_append_char_to_string_to_make_subseq
 	./260_single_number_iii
 	./26_remove_dupes_from_sorted_array
 	./27_remove_element
@@ -22,6 +24,7 @@ use (
 	./3075_maximize_happiness_of_selected_children
 	./3110_score_of_a_string
 	./344_reverse_string
+	./409_longest_palindrome
 	./463_island_perimeter
 	./506_relative_ranks
 	./58_lenth_of_last_word
