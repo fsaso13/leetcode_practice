@@ -28,8 +28,10 @@ use (
 	./463_island_perimeter
 	./506_relative_ranks
 	./58_lenth_of_last_word
+	./648_replace_words
 	./752_open_the_lock
 	./80_remove_dupes_from_sorted_array_2
+	./846_hand_of_straights
 	./881_boats_to_save_people
 	./88_merge_sorted_array
 	./lps
