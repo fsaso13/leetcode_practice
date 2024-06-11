@@ -2,6 +2,8 @@ go 1.22.2
 
 use (
 	./1002_find_common_characters
+	./1051_height_checker
+	./1122_relative_sort_array
 	./121_best_time_to_sell_stock
 	./122_best_time_to_buy_stocks_2
 	./1255_max_score_words_formed_by_letters
@@ -27,6 +29,7 @@ use (
 	./409_longest_palindrome
 	./463_island_perimeter
 	./506_relative_ranks
+	./523_continous_subarray_sum
 	./58_lenth_of_last_word
 	./648_replace_words
 	./752_open_the_lock
@@ -34,6 +37,7 @@ use (
 	./846_hand_of_straights
 	./881_boats_to_save_people
 	./88_merge_sorted_array
+	./974_subarray_sums_divisible_by_k
 	./lps
 	./myAtoi
 	./palinNumber
