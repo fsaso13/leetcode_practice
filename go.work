@@ -16,6 +16,7 @@ use (
 	./1_two_sum
 	./2000_reverse_prefix_of_word
 	./200_number_of_islands
+	./2037_min_number_of_moves_to_seat_everyone
 	./205_isomorphic_string
 	./2441_largest_positive_integer_that_exists_with_its_negative
 	./2486_append_char_to_string_to_make_subseq
