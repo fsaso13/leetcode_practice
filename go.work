@@ -26,18 +26,23 @@ use (
 	./2816_double_a_number_rep_as_linklist
 	./3075_maximize_happiness_of_selected_children
 	./3110_score_of_a_string
+	./330_patching_array
 	./344_reverse_string
 	./409_longest_palindrome
 	./463_island_perimeter
+	./502_IPO
 	./506_relative_ranks
 	./523_continous_subarray_sum
 	./58_lenth_of_last_word
+	./633_sum_of_square_numbers
 	./648_replace_words
 	./752_open_the_lock
 	./80_remove_dupes_from_sorted_array_2
+	./826_most_profit_assigning_work
 	./846_hand_of_straights
 	./881_boats_to_save_people
 	./88_merge_sorted_array
+	./945_minimum_increment_to_make_array_unique
 	./974_subarray_sums_divisible_by_k
 	./lps
 	./myAtoi
