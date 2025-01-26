@@ -8,6 +8,7 @@ use (
 	./122_best_time_to_buy_stocks_2
 	./1255_max_score_words_formed_by_letters
 	./13_roman_to_int
+	./1482_minimum_number_of_days_to_make_m_bouquets
 	./165_compare_version_numbers
 	./169_majority_element
 	./189_rotate_array
